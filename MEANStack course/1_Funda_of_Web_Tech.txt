@@ -1,0 +1,97 @@
+MEAN Stack
+    >> M: MongoDB (Database)
+    >> E: ExpressJs (Backend)
+    >> A: Angular (Frontend)
+    >> N: NodeJs (Backend)
+
+
+Three Pillars
+    >> HTML (Hyper Text MarkUp Language)
+    >> CSS (Cascading Sytle Sheets)
+    >> JS (Java Script)
+
+Other Stacks
+    >> MEAN, MERN, Java Full Stack
+
+Web Dev
+    >> Building/Developers Team
+    >> Testing Team (Manual Testers/Automated Testers)
+    >> Hosting Team (DevOps Team)
+    >> Maintenance Team/Support Team
+
+SDLC (Software Development Life Cycle):
+    >> WaterFall Model
+    >> Agile Model
+    >> Spiral Model
+    >> Iterative Model
+    >> Incremental Model
+    >> V Shaped Model
+    >> RAD (Rapid Application Development) Model
+
+URL (Uniform Resource Locator)
+    https://www.instagram.com/
+    https://education.rohanAcademy.edu/FullStack
+
+
+    https: Protcol
+    rohanAcademy: Server/Domain Name
+    education: Sub-Domain
+    .edu: TLD (Top Level Domain)
+    FullStack: Path/Location
+
+
+Protcol: 
+    >> Set of rules/instructions
+        http  : Hyper Text Transfer Protcol
+        https : Hyper Text Transfer Protcol Secure
+        tcp   : Transmission Control Protcol
+        udp   : User Datagram Protcol
+        smtp  : Simple Mail Transfer Protcol
+        ftp   : File Transfer Protcol
+        ip    : Internet Protcol (ipV4 & ipV6)
+
+
+            >> Client/Web Page ---------(uName & uPwd) -----------> Instagram Server
+            >> SSL (Secure Socket Layer) Certification 
+
+
+
+Server/Domain Name:
+    >> Unique Identifier
+        >> Eg: Google, Amazon
+
+
+Sub-Domain Name:
+    >> gMeet
+    >> gMaps
+    >> gDrive
+    >> Gmail
+    >> gPhotos
+    >> gFiles
+    >> gChrome
+    >> gCalendar
+    >> gPay
+
+    >> Amazon Shopping
+    >> AWS
+
+
+TLD (Top Level Domain):
+    Amazon.in (India)
+    Amazon.com (commercial)
+    Amazon.edu (education)
+    Amazon.org (organsisation)
+    Amazon.uk (united kingdoms)
+
+
+
+Offline Editors
+    >> Notepad
+    >> Notepad++
+    >> Sublime
+    >> Open Brackets
+    >> VS Code
+
+Online Editors
+    >> CodeSpace
+    >> CodeSandbox

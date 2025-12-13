@@ -1,0 +1,31 @@
+show dbs
+
+use 6A19
+
+db.students.insertOne({ name: "vedant", age:20, city:"valsad" })
+
+db.students.find({ age:20 })
+
+
+db.students.findOne({ name: "john" })
+
+db.students.insertMany([
+  { name: "john", age: 25 },
+  { name: "vedant", age: 20 }
+ 
+])
+
+db.students.updateOne(
+  {name : "vedant"},
+  {$set : {age : 21}}
+)
+
+db.students.updateMany(
+    {},
+    {$set : {status: "active"}}
+)
+
+
+
+db.students.find()
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML:</title>
+</head>
+<body>
+    <h2>Forms in HTML:</h2>
+    <form action="">
+        <label for="fname">first name  <input id="fname" type="text" minlength="5" maxlength="7" required placeholder="enter ur fname" /></label>
+        <label for="lname">Last name <input id="lname" type="text"  ></label><br><br>
+        <label for="age">age<input id="age" type="number" ></label><br><br>
+        <label for="mno">mobile number <input id="mno" type="number" minlength="11" maxlength="12" > </label><br><br>
+        <label for="joindt">date of joining </label><input id="" type="date" name="" id=""><br><br>
+        <label for="">password</label> <input type="password" name="" id=""><br>
+        
+        <br><br>
+        <p>select known languages</p>
+        <input type="checkbox" name="lang" id="English" value="English">
+        <label for="English">English</label>
+        <input type="checkbox" name="lang" id="Hindi" checked>
+        <label for="Hindi">Hindi</label>
+        <input type="checkbox" name="lang" id="Telugu">
+        <label for="Telugu">Telugu</label>
+        <input type="checkbox" name="lang" id="Spanish">
+        <label for="Spanish">Spanish</label>
+
+        <p>Enter your shirt size</p>
+        <input type="radio" name="shirtsize" id="small"> <label for="small">small size</label>
+        <input type="radio" name="shirtsize" id="medium"> <label for="medium">medium size</label>
+        <input type="radio" name="shirtsize" id="large"> <label for="large">large size</label><br><br>  
+        <label for="clr">select shirt color</label>
+        <input type="color" id="clr"><br><br>
+        <label for="paymentOption">Please select a payment option</label>
+        <select name="payment" id="paymentOption">
+            <option value=""></option>
+            <option value="">gpay</option>
+            <option value="">phonepay</option>
+            <option value="">UPI</option>
+        </select>
+        <br><br>
+        <label for="cmts">please provide your valuable feedback</label>
+        <!-- <input type="text" name="" id=""> -->
+         <textarea name="cmt" id="cmts" placeholder="please enter your feedback here"></textarea>
+        <br><br>
+        <input type="reset">
+        <input type="submit" name="" id="">
+    </form>
+</body>
+</html>
