@@ -1,0 +1,12 @@
+body{
+    margin: 0%;
+    padding: 0;
+}
+
+div{
+    font-size: 30px;
+    text-align: center;
+    border: 15px solid greenyellow;
+    padding: 35px 40px 45px 50px;
+    margin: 25px;
+}

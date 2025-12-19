@@ -1,0 +1,72 @@
+/* 
+selectorType
+{
+    propertykey: propertyvalue;
+}
+*/
+
+/* 1. Element Selector */
+/* p{
+    color: red;
+}
+h2{
+    color: white;
+    background-color: black;
+} */
+
+/* 2. ID Selector */
+/* #pId{
+    color: blue;
+}
+#p1Id{
+    font-family: cursive;
+} */
+
+/* #pId, #p1Id, .highlighter, p{
+    color: brown;
+} */
+
+/* 3. Class Selector */
+/* .highlighter{
+    background-color: yellow;
+}
+.headingstyles{
+    font-size: larger;
+} */
+/* specificity order
+    >> id >> highest priority >> class >> element >> lowest priority
+*/
+
+/* 4. Nested Selector */
+/* 
+#nestedId{
+    color: blue;
+}
+.nestedClass{
+    color: red;
+}
+p{
+    color: yellow;
+} */
+
+/* 5. Universal Selector */
+/* *{
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+} */
+
+/* 6. Descendant Selector */
+#dessel p{
+    color: purple;
+}
+
+ /* 7. Direct child Selector */
+ #dirsel > p{
+    color: yellow;
+ }
+body {
+    background-color: lightblue;
+}
+p:hover{
+    color: green;
+}
