@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essence Emporium - Luxury Perfumes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Essence Emporium</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to Essence Emporium</h2>
+            <p>Discover scents that captivate. Explore our 3D store below!</p>
+            <div id="3d-scene"></div> <!-- 3D Canvas -->
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Our Perfumes</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://via.placeholder.com/200x300?text=Velvet+Noir" alt="Velvet Noir">
+                <h3>Velvet Noir</h3>
+                <p>A mysterious blend of dark roses and musk.</p>
+                <button class="try-scent">Try Scent</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x300?text=Ocean+Mist" alt="Ocean Mist">
+                <h3>Ocean Mist</h3>
+                <p>Fresh sea breeze with citrus notes.</p>
+                <button class="try-scent">Try Scent</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+        <div class="scent-mixer">
+            <h3>Mix Your Own Scent</h3>
+            <select id="base"><option>Base: Floral</option><option>Base: Citrus</option></select>
+            <select id="note"><option>Note: Musk</option><option>Note: Spice</option></select>
+            <button id="mix">Mix & Preview</button>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Essence Emporium is a luxurious perfume boutique inspired by Parisian elegance, featuring interactive 3D displays and custom scent creations.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Essence Emporium. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
