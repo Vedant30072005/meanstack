@@ -1,0 +1,29 @@
+.container{
+    /* width:400px;
+    height:400px;
+    border: 1px solid black;
+    overflow: visible;
+    overflow: hidden;
+    overflow: visible;
+    text-align: justify;  */
+}
+
+.img1{
+    float:left;
+}
+
+.img2{
+    float:right;
+}
+
+.subcontainer{
+    overflow: auto;
+}
+
+.p1{
+    clear:left;
+}
+
+.p2{
+    clear:both;
+}

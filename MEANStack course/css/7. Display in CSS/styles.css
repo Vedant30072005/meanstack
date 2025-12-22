@@ -1,0 +1,97 @@
+*{
+    /* color: rgb(255, 0, 0); */
+    /* font-family: "Playwrite HU", cursive; */
+    
+}
+
+h3{
+    
+    
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 0, 221);
+    text-decoration-style: wavy;
+}
+
+*{
+    /* border: 1px solid green; */
+    /* width: 400px; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* display : block; */
+}
+
+p{
+    /* width: 60%; */
+    display: block;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 0, 221);
+    text-decoration-style: wavy;
+}
+
+/* p > span{
+    text-decoration-color: rgb(255, 0, 221);
+    text-decoration: underline;
+    text-decoration-style: wavy;
+} */
+
+span{
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 0, 221);
+    text-decoration-style: wavy;
+    color: black;
+}
+
+a{
+    
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 0, 221);
+    text-decoration-style: wavy;
+    color: blue;
+    display: inline;
+}
+
+/* a{
+    width : 60%;
+    color: blue;
+    text-decoration-color: black;
+    height: 125px;
+    display: inline-block;
+} */
+
+img{
+    
+    display: block;
+    width : 400px;
+    height : 250px;
+    border: 2px solid green;
+    /* align-items: center; */
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 0, 221);
+    text-decoration-style: wavy;
+    text-align: end;
+    /* border: 1px solid white; */
+    background-color: black;
+    /* display: inline-block; */
+    padding: 30px;
+}
+
+ul > li > a{
+    /* color: white; */
+    text-decoration: disc;
+}
+
+li{
+    display: inline;
+    margin: 5px;
+    
+}
+
+li>a:hover{
+    color: orange;
+}
