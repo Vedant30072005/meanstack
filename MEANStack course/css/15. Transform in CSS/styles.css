@@ -1,0 +1,43 @@
+.outer-container{
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: scale(1); */
+    /* transform: scalex(1.5); */
+    /* transform: scalex(1.5) scaley(1.5); */
+    /* transform: scale(1.5, 1.5); */
+
+    /* transform: skew(45deg, 15deg); */
+
+    /* transform: translate(20px); */
+    /* transform: translate(50%, 50%); */
+
+    /* transform: rotate(25deg); */
+    /* transform: rotate(180deg); */
+    /* the transform: rotate is also available in x, y and z direction with rotatex(60deg) */
+    
+    /* transform: rotate(45deg) scale(1.3) skew(30deg) translate(50%); */
+
+    
+    /* transform-origin: top left; */
+    /* transform-origin: 40% 20%; */
+    transition: 1.5s ease-in-out;
+}
+
+.inner-container:hover{
+    transform: rotate(360deg);
+}

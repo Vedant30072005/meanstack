@@ -1,0 +1,24 @@
+body{
+    background-color: deepskyblue;
+}
+
+/* @media(width <= 500px){
+    body{
+        background-color: lightgreen;
+    }
+} */
+
+/* @media(width <= 300px){
+    body{
+        background-color: lightcoral;
+    }
+} */
+
+/* So whenever you give a media max number, it should be coming from greatest to lowest as in failing to do so, the last one or smallest one will be ignored. */
+
+
+@media(max-width: 600px) and (min-width: 500px){
+    body{
+        background-color: lightgreen;
+    }
+}

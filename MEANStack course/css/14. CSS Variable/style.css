@@ -1,0 +1,60 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+:root{
+    --primary-color: red;
+    --secondary-color: #444;
+    --cardbgcolor: #fff;
+    --parentbgcolor: #eee;
+    --spacings-for-margin-padding: 20px;
+}
+
+/* This dark is used with a js button called darkmode, it simly changes the content color */
+
+:dark{
+    --primary-color: #fff;
+    --secondary-color: #ddd;
+    --cardbgcolor: #333;
+    --parentbgcolor: #eee;
+}
+
+.container{
+    padding : 45px;
+   --bakgcolor: yellow;
+   background-color: var(--parentbgcolor);
+   min-height: 100vh;
+
+}
+
+h1{
+    text-align : center;
+    color: var(--primary-color);
+    background-color: var(--cardbgcolor);
+    padding: var(--spacings-for-margin-padding);
+    margin: var(--spacings-for-margin-padding);
+}
+
+h2{
+    color: var(--primary-color);
+}
+
+.box{
+    padding: var(--spacings-for-margin-padding);
+    margin-block: var(--spacings-for-margin-padding);
+    /* --bakgcolor: yellow; */
+    background-color: var(--cardbgcolor);
+}
+
+h4{
+    padding: 45px;
+    color: var(--primary-color);
+}
+
+@media (max-width:700px){
+    .container{
+        --bakgcolor: lightgreen;
+    }
+}
