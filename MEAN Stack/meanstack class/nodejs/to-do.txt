@@ -1,0 +1,6 @@
+declaration variables - let, var, const
+implicit, explicit type conversion
+conditional statements
+looping statements
+--(comparision operation) vs===(strict equal)
+function - normal functions, ananymous,funtions, functions expression, arrow functions
