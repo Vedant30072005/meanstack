@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 15px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+    
+    <form id="registrationForm">
+        <label>Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Age:</label>
+        <input type="number" id="age" required>
+
+        <label>Enrollment Number:</label>
+        <input type="text" id="enrollment" required>
+
+        <label>Email ID:</label>
+        <input type="email" id="email" required>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+        
+        event.preventDefault(); // Stops page refresh
+
+        // Get values
+        let name = document.getElementById("name").value;
+        let age = document.getElementById("age").value;
+        let enrollment = document.getElementById("enrollment").value;
+        let email = document.getElementById("email").value;
+
+        // Print in console
+        console.log("----- Registration Details -----");
+        console.log("Name:", name);
+        console.log("Age:", age);
+        console.log("Enrollment Number:", enrollment);
+        console.log("Email:", email);
+        console.log("--------------------------------");
+    });
+</script>
+
+</body>
+</html>

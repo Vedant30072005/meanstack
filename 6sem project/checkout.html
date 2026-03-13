@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Checkout - CraftNext</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.checkout-container{
+max-width:900px;
+margin:60px auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.checkout-box{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+
+.checkout-box h2{
+margin-bottom:20px;
+}
+
+.checkout-box input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+.place-btn{
+width:100%;
+padding:14px;
+background:#d17a4c;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+.place-btn:hover{
+background:#b8663d;
+}
+
+.summary-item{
+display:flex;
+justify-content:space-between;
+margin-bottom:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+<a class="brand" href="index.html">CraftNext</a>
+<a href="cart.html" class="back-btn">← Back to Cart</a>
+</header>
+
+<div class="checkout-container">
+
+<!-- SHIPPING FORM -->
+
+<div class="checkout-box">
+
+<h2>Shipping Details</h2>
+
+<input placeholder="Full Name">
+<input placeholder="Email">
+<input placeholder="Phone Number">
+<input placeholder="Address">
+<input placeholder="City">
+<input placeholder="Pincode">
+
+<button class="place-btn" onclick="placeOrder()">
+Place Order
+</button>
+
+</div>
+
+
+<!-- ORDER SUMMARY -->
+
+<div class="checkout-box">
+
+<h2>Order Summary</h2>
+
+<div id="orderSummary"></div>
+
+<h3 id="orderTotal"></h3>
+
+</div>
+
+</div>
+
+
+<script>
+
+function loadSummary(){
+
+const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+const box = document.getElementById("orderSummary");
+
+let total = 0;
+
+box.innerHTML = cart.map(p=>{
+
+total += p.price * p.qty;
+
+return `
+<div class="summary-item">
+<span>${p.name} x${p.qty}</span>
+<span>₹${p.price}</span>
+</div>
+`;
+
+}).join("");
+
+document.getElementById("orderTotal").innerText =
+"Total: ₹" + total;
+
+}
+
+function placeOrder(){
+
+alert("🎉 Order placed successfully!");
+
+localStorage.removeItem("cart");
+
+window.location.href = "index.html";
+
+}
+
+loadSummary();
+
+</script>
+
+</body>
+</html>

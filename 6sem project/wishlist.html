@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Your Wishlist</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+    <a class="brand" href="index.html">CraftNext</a>
+    <div>
+        <a href="index.html" class="back-btn">← Back to Home</a>
+    </div>
+</header>
+
+
+<!-- WISHLIST SECTION -->
+
+<section class="products">
+
+<h2>Your Wishlist ❤️</h2>
+
+<div class="product-grid" id="wishGrid"></div>
+
+</section>
+
+
+
+<!-- SCRIPTS -->
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const ids = getWishlist();
+    const grid = document.getElementById("wishGrid");
+
+    if(ids.length === 0){
+        grid.innerHTML = "<h3>Your wishlist is empty ❤️</h3>";
+        return;
+    }
+
+    const list = PRODUCTS.filter(p => ids.includes(p.id));
+
+    renderWishlistProducts(list);
+
+});
+
+
+function renderWishlistProducts(list){
+
+    const grid = document.getElementById("wishGrid");
+
+    grid.innerHTML = "";
+
+    list.forEach(p => {
+
+        const stars =
+            "★".repeat(Math.round(p.rating || 5)) +
+            "☆".repeat(5 - Math.round(p.rating || 5));
+
+        grid.innerHTML += `
+        <div class="product-card">
+
+            <span class="wish active" data-id="${p.id}">♥</span>
+
+            <a href="product.html?id=${p.id}" class="card-link">
+                <img src="${p.img}">
+            </a>
+
+            <h4>${p.name}</h4>
+
+            <p>By ${p.seller}</p>
+
+            <div class="rating">${stars}</div>
+
+            <span class="price">₹${p.price}</span>
+
+            <button onclick="addToCart(PRODUCTS.find(x=>x.id===${p.id}))">
+                Add to Cart
+            </button>
+
+        </div>
+        `;
+    });
+
+}
+
+</script>
+
+
+</body>
+</html>

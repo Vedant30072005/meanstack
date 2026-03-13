@@ -1,18 +1,21 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
-    int i;
-    float scores[5];
-    cout << "enter array elements" << endl;
-    for(i=0;i<5;i++)
-    {
-        cin >> scores[i];
+    string name =  "p1ab3c4h9da";
+    int pt1=0;
+    int pt2=name.size()-1;
+    while(pt1<pt2){
+        if((name[pt1]>='0'&&name[pt2]<='9')&&(name[pt2]>='0'&&name[pt2]<='9')){
+            swap(name[pt1],name[pt2]);
+            pt1++;
+            pt2--;
+        }else if((name[pt1]>='0'&&name[pt2]<='9')&&(name[pt2]<'0'&&name[pt2]>'9')){
+            pt2--;
+        }else{
+            pt1++;
+        }
     }
-    cout << "Your array is " << endl;
-    for(i=0;i<5;i++)
-    {
-        cout << scores[i] << endl;
-    }
+    cout<<name;
     return 0;
 }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sell Your Art - CraftNest</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* SELL PAGE */
+
+.sell-page{
+padding:60px 8%;
+display:flex;
+justify-content:center;
+}
+
+/* FORM BOX */
+
+.sell-box{
+background:white;
+padding:40px;
+width:500px;
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.sell-box h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+/* INPUTS */
+
+.sell-box input,
+.sell-box textarea,
+.sell-box select{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+/* TEXTAREA */
+
+.sell-box textarea{
+resize:none;
+height:100px;
+}
+
+/* BUTTON */
+
+.sell-btn{
+width:100%;
+padding:14px;
+background:#d97745;
+border:none;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.sell-btn:hover{
+background:#c56535;
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+<a class="brand" href="index.html">CraftNext</a>
+<a href="index.html" class="back-btn">← Back to Home</a>
+</header>
+
+<section class="sell-page">
+
+<div class="sell-box">
+
+<h2>Sell Your Artwork 🎨</h2>
+
+<form>
+
+<input type="text" placeholder="Artwork Title">
+
+<input type="text" placeholder="Artist Name">
+
+<input type="number" placeholder="Price (₹)">
+
+<select>
+<option>Select Category</option>
+<option>Painting</option>
+<option>Lippan Art</option>
+<option>Mandala</option>
+<option>Wall Decor</option>
+<option>Handmade Crafts</option>
+</select>
+
+<textarea placeholder="Artwork Description"></textarea>
+
+<input type="file">
+
+<button class="sell-btn">List Artwork</button>
+
+</form>
+
+</div>
+
+</section>
+
+</body>
+</html>

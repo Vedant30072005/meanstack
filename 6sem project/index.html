@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CraftNext – Handmade Marketplace</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <nav class="navbar">
+        <a class="brand" href="index.html">CraftNext</a>
+
+        <!-- <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for handmade items">
+            <button onclick="searchInput.focus()">Search</button>
+        </div> -->
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+
+            <a href="#categories">Categories</a>
+
+            <a href="sell.html">Sell</a>
+
+            <a href="login.html">Login</a>
+
+            <a href="cart.html">Cart 🛒</a>
+
+            <a href="wishlist.html">Wishlist ❤️</a>
+        </div>
+    </nav>
+</header>
+<!-- ========== HERO SECTION ================= -->
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Discover Unique Handmade Products</h1>
+        <p>Support small creators & artisans worldwide</p>
+        <button>Start Shopping</button>
+    </div>
+</section>
+
+<!-- =================== CATEGORIES =========== -->
+<section id="categories" class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+
+        <div class="category-card" onclick="openCategory('spiritual')">
+            <img src="Images/Spritual Image/Krishna1.jpeg" class="Krishna1-image" alt="Krishna1">
+            <h3>Spiritual</h3>
+        </div>
+
+        <div class="category-card" onclick="openCategory('clock')">
+            <img src="Images/Clock/Clock.jpeg" class="clock-image" alt="Clock">
+            <h3>Clock</h3>
+        </div>
+
+        <div class="category-card" onclick="openCategory('lippan')">
+            <img src="Images/Lippan Art/best1.jpeg" class="LippanArt-image" alt="Lippan Art">
+            <h3>Lippan Art</h3>
+        </div>
+
+        <div class="category-card" onclick="openCategory('diya')">
+            <img src="Images/Diya Art/1.jpeg" class="DiyaArt-image" alt="Diya Art">
+            <h3>Diya Art</h3>
+        </div>
+
+        <div class="category-card" onclick="openCategory('zharokha')">
+            <img src="Images/Zharokha Art/1.jpeg" class="ZharokhaArt-image" alt="Zharokha Art">
+            <h3>Zharokha Art</h3>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= FEATURED PRODUCTS ================= -->
+<!-- <section class="products">
+    <h2>Featured Products</h2>
+
+    <div class="product-grid">
+
+        <a href="product.html?id=0" class ="card-link">
+        <div class="product-card">
+            <img src="Images/Spritual Image/Krishna1.jpeg" class="Krishna1-image" alt="Krishna1">
+            <h4>Handmade Krishna Painting</h4>
+            <p>By Archana Rana</p>
+            <p>Valsad Gujarat</p>
+            <span class="price">₹499</span>
+            <div class="rating">★★★★★</div>
+            <br>
+            <span class="badge">Best Seller</span>
+            <button class="add-btn" data-name="Handmade Krishna Painting" data-price="499" data-img="Images/Spritual Image/Krishna1.jpeg">Add to Cart</button>
+        </div>
+        </a>
+
+        <a href="product.html?id=1" class = "card-link">
+        <div class="product-card">
+            <img src="Images/Lippan Art/best1.jpeg" class="LippanArt-image" alt="Lippan Art">
+            <h4>Handmade Lippan Art</h4>
+            <p>By Archana Rana</p>
+            <p>Valsad Gujarat</p>
+            <span class="price">₹499</span>
+            <div class="rating">★★★★★</div>
+            <br>
+            <span class="badge">Best Seller</span>
+            <button class="add-btn" data-name="Handmade Lippan Art" data-price="499" data-img="Images/Lippan Art/best1.jpeg">Add to Cart</button>
+        </div>
+        </a>
+
+        <a href="product.html?id=2" class="card-link">
+        <div class="product-card">
+            <img src="Images/Clock/Shell-Art.jpeg" class= "Clock-image" alt="Shell-Art">
+            <h4>Handmade Shell Art</h4>
+            <p>By PaperSoul</p>
+            <span class="price">₹499</span>
+            <div class="rating">★★★★★</div>
+            <br>
+            <button class="add-btn" data-name="Handmade Journal" data-price="499" data-img="Images/Clock/Shell Art.jpeg">Add to Cart</button>
+        </div>
+        </a>
+
+        <a href="product.html?id=3" class="card-link">
+        <div class="product-card">
+            <img src="Images/Clock/Art-Bottle.jpeg" class="Clock-image" alt="Art-Bottle">
+            <h4>Clay Vase</h4>
+            <p>By EarthArt</p>
+            <span class="price">₹499</span>
+            <div class="rating">★★★★★</div>
+            <br>
+            <button class="add-btn" data-name="Clay Vase" data-price="499" data-img="Images/Clock/Art Bottle.jpeg">Add to Cart</button>
+        </div>
+        </a>
+
+    </div>
+</section> -->
+<section class="products">
+    <h2>Featured Products</h2>
+
+    <div class="product-grid" id="productContainer"></div>
+
+</section>
+
+
+<!-- ================= FEATURED COLLECTION ================= -->
+<!-- <section class="collection">
+    <div class="collection-content">
+        <h2>Handpicked Collection</h2>
+        <p>Premium handmade items curated by experts</p>
+        <button>Explore Collection</button>
+    </div>
+</section> -->
+
+<!-- ================= SELLER SPOTLIGHT ================= -->
+<section class="seller">
+    <h2>Top Seller of the Week</h2>
+
+    <div class="seller-card">
+        <img src="Images/Clock/Ganesha Image.jpg" class="Ganesha-image" alt="Ganesha Image">
+        <div>
+            <h3>Archana Rana</h3>
+            <p>Valsad, Gujarat</p>
+            <p>Specialized in handcrafted jewelry with over 5,000 happy customers.</p>
+            <div class="rating">★★★★★ 5.0/5.0</div>
+            <p>Mo. No. +91 9876543210</p>
+            <!-- <button>Visit Shop</button> -->
+        </div>
+    </div>
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter">
+    <h2>Get Weekly Handmade Picks</h2>
+    <p>Subscribe for exclusive deals</p>
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+</section>
+
+<div class="floating-cart" onclick="location.href='cart.html'">
+    🛒 <span id="cartCount">0</span>
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="footer-grid">
+
+        <div>
+            <h4>About</h4>
+            <a href="#">Company</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+        </div>
+
+        <div>
+            <h4>Help</h4>
+            <a href="#">Support</a>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+        </div>
+
+        <div>
+            <h4>Sell</h4>
+            <a href="#">Start Selling</a>
+            <a href="#">Seller Guide</a>
+        </div>
+
+        <div>
+            <h4>Follow</h4>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 CraftNest. All rights reserved.
+    </p>
+</footer>
+<script>
+function openCategory(cat) {
+    window.location.href = "collection.html?cat=" + cat;
+}
+</script>
+<script src="products.js"></script>
+<script src="script.js"></script>
+<script>
+
+const grid = document.getElementById("productContainer");
+
+/* ===== RENDER ===== */
+
+function renderProducts(list){
+
+    grid.innerHTML = "";
+
+    if(list.length === 0){
+        grid.innerHTML = "<h3>No products found</h3>";
+        return;
+    }
+
+    list.forEach(p => {
+
+        const stars =
+            "★".repeat(Math.round(p.rating || 5)) +
+            "☆".repeat(5 - Math.round(p.rating || 5));
+
+        let badgeHTML = "";
+
+        if(p.bestSeller){
+            badgeHTML += '<span class="badge badge-best">Best Seller</span>';
+        }
+
+        if(p.isNew){
+            badgeHTML += '<span class="badge badge-new">New</span>';
+        }
+
+        grid.innerHTML += `
+        <div class="product-card">
+
+            <span class="wish" data-id="${p.id}">♥</span>
+
+            <a href="product.html?id=${p.id}" class="card-link">
+                <img src="${p.img}" alt="${p.name}">
+            </a>
+
+            <h4>
+                <a href="product.html?id=${p.id}" class="card-link">
+                    ${p.name}
+                </a>
+            </h4>
+
+            <p>
+                By <a href="seller.html?seller=${encodeURIComponent(p.seller)}"
+                class="seller-link">${p.seller}</a>
+            </p>
+
+            <div class="rating">${stars}</div>
+
+            <span class="price">₹${p.price}</span>
+
+            ${badgeHTML}
+
+            <button onclick="addToCart(PRODUCTS.find(x=>x.id===${p.id}))">
+                Add to Cart
+            </button>
+
+        </div>
+        `;
+    });
+
+    renderWishlistIcons();
+}
+
+/* ===== INITIAL LOAD ===== */
+
+renderProducts(PRODUCTS);
+
+
+/* ===== SEARCH ===== */
+
+document.getElementById("searchInput")
+.addEventListener("input", function(){
+
+    const q = this.value.toLowerCase();
+
+    const filtered = PRODUCTS.filter(p =>
+        p.name.toLowerCase().includes(q) ||
+        p.seller.toLowerCase().includes(q) ||
+        p.category.toLowerCase().includes(q)
+    );
+
+    renderProducts(filtered);
+});
+
+</script>
+</body>
+</html>

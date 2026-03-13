@@ -1,11 +1,21 @@
-// const http = require('http')
+function takeOrder(callback) {
+    setTimeout(() => {
+        console.log("1. Order taken");
+        callback();
+    }, 1000);
+}
 
-// const server = http.createServer((req, res)=>{
-//     res.write("response coming from server")
-//     res.end("")
-// })
+function prepareFood(callback) {
+    setTimeout(() => {
+        console.log("2. Food prepared");
+        callback();
+    }, 2000);
+}
 
-// server.listen(3000, () =>{
-//     console.log("server running on 3000 port number")
-// })
+function packFood(callback) {
+    setTimeout(() => {
+        console.log("3. Food packed");
+        callback();
+    }, 1000);
+}
 
